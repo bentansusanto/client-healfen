@@ -3,6 +3,7 @@ import defaultTheme from "tailwindcss/defaultTheme";
 
 const config: Config = {
   content: [
+     './node_modules/preline/preline.js',
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -24,16 +25,16 @@ const config: Config = {
         transparent: "transparent",
         white: "#FFFFFF",
         black: "#1C2434",
-        red: "#FB5454",
         "black-2": "#010101",
         body: "#64748B",
+        blue: "#0074D9",
         bodydark: "#AEB7C0",
         bodydark1: "#DEE4EE",
         bodydark2: "#8A99AF",
         primary: "#3C50E0",
         secondary: "#80CAEE",
         stroke: "#E2E8F0",
-        gray: "#EFF4FB",
+        // gray: "#EFF4FB",
         graydark: "#333A48",
         "gray-2": "#F7F9FC",
         "gray-3": "#FAFAFA",
@@ -330,6 +331,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('preline/plugin')],
 };
 export default config;
