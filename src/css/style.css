@@ -4,6 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 @layer base {
     body {
         @apply relative z-1 bg-white font-satoshi text-base font-normal;

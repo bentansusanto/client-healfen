@@ -1,6 +1,7 @@
 "use client";
 import { fontBody } from "@/components/common/FontFamily";
 import Loader from "@/components/common/Loader";
+import 'aos/dist/aos.css';
 import "@/css/satoshi.css";
 import "@/css/style.css";
 import "flatpickr/dist/flatpickr.min.css";
