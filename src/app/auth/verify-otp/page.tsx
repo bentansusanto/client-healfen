@@ -1,11 +1,10 @@
-import VerifyOtpPage from '@/components/Authentication/OTPCode/VerifyOtpPage'
+import OtpCodePage from '@/components/Authentication/OtpCode/OtpCode'
 import AuthLayout from '@/components/Layouts/AuthLayout'
-import React from 'react'
 
 const VerifyOtp = () => {
   return (
     <AuthLayout>
-        <VerifyOtpPage/>
+        <OtpCodePage/>
     </AuthLayout>
   )
 }

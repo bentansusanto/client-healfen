@@ -7,11 +7,10 @@ export const initialLoginValues:InitialLoginValues = {
 }
 
 export const initialRegisterValues:InitialRegisterValues = {
-    firstName: "",
-    lastName: "",
+    name: "",
     email: "",
     password: "",
-    isAdmin: true
+    role: "client"
 }
 
 export const validationLoginSchema = Yup.object({
@@ -20,8 +19,7 @@ export const validationLoginSchema = Yup.object({
 });
 
 export const validationRegisterSchema = Yup.object({
-    firstName: Yup.string().required("Please input firstname"),
-    lastName: Yup.string().optional(),
+    name: Yup.string().required("Please input name"),
     email: Yup.string().email("must be using @").required("Please input email"),
     password: Yup.string()
         .matches(
@@ -29,5 +27,5 @@ export const validationRegisterSchema = Yup.object({
             "Password must contain at least 8 characters, including uppercase, lowercase, number and special character"
         )
         .required("Please input password"),
-    isAdmin: Yup.bool().required("Please checklist for register as admin")
+    role: Yup.bool().required("Please checklist for register as admin")
 });

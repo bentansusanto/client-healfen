@@ -1,11 +1,7 @@
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
-import { Metadata } from "next";
-import DefaultLayout from "@/components/Layouts/DashboardLayout";
 import Login from "@/components/Authentication/Login/Login";
 import AuthLayout from "@/components/Layouts/AuthLayout";
+import { Metadata } from "next";
+import React from "react";
 
 export const metadata: Metadata = {
   title: "Next.js SignIn Page | TailAdmin - Next.js Dashboard Template",

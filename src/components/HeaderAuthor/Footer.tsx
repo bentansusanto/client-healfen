@@ -4,7 +4,7 @@ import Link from "next/link";
 const Footer = () => {
   const date = new Date().getFullYear();
   return (
-    <div className="bg-[#000C1A] px-5 md:py-5 py-3 md:mt-0 md:px-8 lg:px-20 xl:px-40">
+    <div className="bg-[#000C1A] px-5 py-3 md:mt-0 md:px-8 lg:px-20 xl:px-40">
       <div className="flex flex-col-reverse items-center space-x-0 md:flex-row md:space-y-0 lg:justify-between lg:space-x-20">
         <footer className="text-gray-400 mt-5">
             ©{date}, Healfen Solution Indonesia

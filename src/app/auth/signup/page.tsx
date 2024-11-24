@@ -1,12 +1,10 @@
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { Metadata } from "next";
-import AuthLayout from "@/components/Layouts/AuthLayout";
 import Register from "@/components/Authentication/Register/Register";
+import AuthLayout from "@/components/Layouts/AuthLayout";
+import { Metadata } from "next";
+import React from "react";
 
 export const metadata: Metadata = {
-  title: "Next.js SignUp Page | TailAdmin - Next.js Dashboard Template",
+  title: "Healfen App | Create New Acccount",
   description: "This is Next.js SignUp Page TailAdmin Dashboard Template",
   // other metadata
 };

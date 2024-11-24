@@ -4,9 +4,8 @@ export type InitialLoginValues = {
 }
 
 export type InitialRegisterValues = {
-    firstName: string;
-    lastName?: string;
+    name: string;
     email: string;
     password: string;
-    isAdmin: boolean;
+    role: "client";
 }
